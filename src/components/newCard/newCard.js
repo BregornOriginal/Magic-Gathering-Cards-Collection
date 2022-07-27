@@ -20,7 +20,7 @@ const NewMagicCard = (props) => {
 };
 
 NewMagicCard.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,

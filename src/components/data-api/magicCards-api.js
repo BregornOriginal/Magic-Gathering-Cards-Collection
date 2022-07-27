@@ -1,34 +1,18 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const createCardsList = (obj) => {
-  let result = {};
+  const result = [];
 
   obj.cards.slice(0, 20).forEach((item) => {
-    let name = null;
-    let image = null;
-    let id = null;
-    let type = null;
-    let convertedManaCost = null;
-
-    if (item.imageUrl) image = item.imageUrl;
-    if (item.name) name = item.name;
-    if (item.id) id = item.id;
-    console.log(item.imageUrl);
-    if (item.type) type = item.type;
-    if (item.cmc) convertedManaCost = item.cmc;
-
-    result = {
-      ...result,
-      [item.id]:
-      {
-        name,
-        image,
-        id,
-        type,
-        convertedManaCost,
-      },
-    };
-    console.log(result);
+    if (item.imageUrl) {
+      result.push({
+        convertedManaCost: item.cmc,
+        image: item.imageUrl,
+        name: item.name,
+        type: item.type,
+        id: item.id,
+      });
+    }
   });
   return result;
 };
@@ -43,7 +27,6 @@ const getCards = createAsyncThunk(
       },
     });
     const data = await response.json();
-    console.log(data);
     return createCardsList(data);
   },
 );

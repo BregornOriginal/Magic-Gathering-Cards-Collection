@@ -26,7 +26,5 @@ const cardsSlice = createSlice({
   },
 });
 
-console.log(cardsSlice.actions);
-
 export const getCard = cardsSlice.actions;
 export default cardsSlice;

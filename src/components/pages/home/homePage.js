@@ -1,13 +1,15 @@
 import { useSelector } from 'react-redux';
 import NewMagicCard from '../../newCard/newCard';
+import Filter from '../../filter/filter';
 
 export default function MagicCards() {
   const { cards } = useSelector((state) => state.cards);
-  const cardsList = Object.values(cards);
+
   return (
     <section className="list-of-cards">
+      <Filter />
       {
-        cardsList.length ? cardsList.map((magicCard) => (
+        cards.length ? cards.map((magicCard) => (
           <NewMagicCard
             key={magicCard.id}
             id={magicCard.id}
