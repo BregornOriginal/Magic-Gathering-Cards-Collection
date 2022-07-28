@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Routes as Router, Route, BrowserRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Header from './components/header/header';
-import CardDetail from './components/pages/details/cardDetail';
-import MagicCards from './components/pages/home/homePage';
-import getCards from './components/data-api/magicCards-api';
+import CardDetail from './components/pages/details/CardDetail';
+import MagicCards from './components/pages/home/HomePage';
+import getCards from './components/data-api/MagicCards-api';
 
 import './App.css';
 
@@ -21,8 +21,10 @@ function App() {
       <BrowserRouter>
         <Header />
         <Router>
+          <Route element={<CardDetail />} path="/detail/:id">
+            fd
+          </Route>
           <Route path="/" element={<MagicCards />} />
-          <Route path="/details" element={<CardDetail />} />
         </Router>
       </BrowserRouter>
     </div>

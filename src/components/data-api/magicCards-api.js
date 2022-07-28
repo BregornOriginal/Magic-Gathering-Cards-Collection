@@ -11,6 +11,7 @@ const createCardsList = (obj) => {
         name: item.name,
         types: item.types[0],
         id: item.id,
+        originalText: item.originalText,
       });
     }
   });
