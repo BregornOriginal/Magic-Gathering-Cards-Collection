@@ -6,7 +6,6 @@ export default function MagicCards() {
   const { cards } = useSelector((state) => state.cards);
   const [cardType, setcardType] = useState([]);
   const [cardsFiltered, setCardsFiltered] = useState([]);
-  // console.log(cards);
 
   const loadSelector = (typeOfCards) => {
     const types = {};
@@ -17,7 +16,6 @@ export default function MagicCards() {
       }
     });
     setcardType(Object.keys(types));
-    console.log(types);
   };
 
   const handlerEvent = (e) => {
