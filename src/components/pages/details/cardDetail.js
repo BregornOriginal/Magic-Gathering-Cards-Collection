@@ -18,10 +18,27 @@ export default function CardDetail() {
   return (
     <section className="detail-of-card">
       <div>
-        <img src={cards[page].image} />
-        <h1>{cards[page].name}</h1>
-        <h1>{cards[page].originalText}</h1>
-        <h1>{cards[page].name}</h1>
+        <img alt="This should be a Magic Card" src={cards[page].image} />
+        <h1>
+          Name:
+          {cards[page].name}
+        </h1>
+        <h1>
+          Rarity:
+          {cards[page].rarity}
+        </h1>
+        <h1>
+          Set Name:
+          {cards[page].setName}
+        </h1>
+        <h1>
+          Rarity:
+          {cards[page].artist}
+        </h1>
+        <h1>
+          Description:
+          {cards[page].originalText}
+        </h1>
       </div>
     </section>
   );

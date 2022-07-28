@@ -14,8 +14,8 @@ export default function MagicCards() {
       if (!types[item.types]) {
         types[item.types] = item.types;
       }
+      return setcardType(Object.keys(types));
     });
-    setcardType(Object.keys(types));
   };
 
   const handlerEvent = (e) => {
@@ -26,10 +26,6 @@ export default function MagicCards() {
       setCardsFiltered(cards);
     }
   };
-
-  // useEffect(() => {
-  //   loadSelector();
-  // }, []);
 
   useEffect(() => {
     setCardsFiltered(cards);

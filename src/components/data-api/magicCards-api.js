@@ -12,6 +12,9 @@ const createCardsList = (obj) => {
         types: item.types[0],
         id: item.id,
         originalText: item.originalText,
+        rarity: item.rarity,
+        setName: item.setName,
+        artist: item.artist,
       });
     }
   });
