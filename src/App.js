@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React Capstone</h1>
+      <h1>Collection of Cards Magic The Gatering</h1>
       <BrowserRouter>
         <Header />
         <Router>
