@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
+import logo from '../../images/logo/logo.png';
 
 function Header() {
   const activeClassName = 'active';
@@ -8,6 +9,7 @@ function Header() {
   return (
     <header>
       <div className="container-logo">
+        <img alt="Logo of Magic The Gatering" src={logo} />
         <nav>
           <ul className="links-container">
             <li>
