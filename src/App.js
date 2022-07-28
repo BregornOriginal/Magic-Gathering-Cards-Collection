@@ -17,9 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Collection of Cards Magic The Gatering</h1>
       <BrowserRouter>
         <Header />
+        <h1>Collection of Cards Magic The Gatering</h1>
         <Router>
           <Route path="/detail/:id" element={<CardDetail />} />
           <Route path="/" element={<MagicCards />} />
