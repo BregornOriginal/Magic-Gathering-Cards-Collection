@@ -1,10 +1,9 @@
 import { useSelector } from 'react-redux';
 import NewMagicCard from '../../newCard/newCard';
-import Filter from '../../filter/filter';
+import Filter from '../../filter/Filter';
 
 export default function MagicCards() {
   const { cards } = useSelector((state) => state.cards);
-
   return (
     <section className="list-of-cards">
       <Filter />
@@ -15,10 +14,10 @@ export default function MagicCards() {
             id={magicCard.id}
             name={magicCard.name}
             image={magicCard.image}
-            type={magicCard.type}
+            types={magicCard.types}
             convertedManaCost={magicCard.convertedManaCost}
           />
-        )) : <p>Games not found</p>
+        )) : <p>Cards not found</p>
       }
     </section>
   );

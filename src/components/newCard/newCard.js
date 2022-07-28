@@ -2,16 +2,16 @@ import PropTypes from 'prop-types';
 
 const NewMagicCard = (props) => {
   const {
-    id, type, name, image, convertedManaCost,
+    id, types, name, image, convertedManaCost,
   } = props;
 
   return (
     <article className="card">
       <section id={id} className="cards-section">
         <h2>{name}</h2>
-        <img className="images" alt="this is a magicGatheringCard" src={image} />
+        <img className="images" alt="this is a Magic Gathering Card" src={image} />
         <div className="card-description">
-          <h4>{type}</h4>
+          <h4>{types}</h4>
           <h5>{convertedManaCost}</h5>
         </div>
       </section>
@@ -22,7 +22,7 @@ const NewMagicCard = (props) => {
 NewMagicCard.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  types: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   convertedManaCost: PropTypes.number.isRequired,
 };

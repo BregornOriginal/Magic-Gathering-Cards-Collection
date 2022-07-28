@@ -9,7 +9,7 @@ const createCardsList = (obj) => {
         convertedManaCost: item.cmc,
         image: item.imageUrl,
         name: item.name,
-        type: item.type,
+        types: item.types[0],
         id: item.id,
       });
     }
