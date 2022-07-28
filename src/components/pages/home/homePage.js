@@ -1,21 +1,23 @@
 import { useState, useEffect, React } from 'react';
 import { useSelector } from 'react-redux';
-import NewMagicCard from '../../newCard/newCard';
+import NewMagicCard from '../../newCard/NewCard';
 
 export default function MagicCards() {
   const { cards } = useSelector((state) => state.cards);
-  const [cardType, setcardType] = useState();
-  const [cardsFiltered, setCardsFiltered] = useState();
+  const [cardType, setcardType] = useState([]);
+  const [cardsFiltered, setCardsFiltered] = useState([]);
+  // console.log(cards);
 
-  const loadSelector = async () => {
-    const response = await fetch('https://api.magicthegathering.io/v1/types', {
-      method: 'GET',
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
+  const loadSelector = (typeOfCards) => {
+    const types = {};
+
+    typeOfCards.map((item) => {
+      if (!types[item.types]) {
+        types[item.types] = item.types;
+      }
     });
-    const data = await response.json();
-    setcardType(data.types);
+    setcardType(Object.keys(types));
+    console.log(types);
   };
 
   const handlerEvent = (e) => {
@@ -27,12 +29,13 @@ export default function MagicCards() {
     }
   };
 
-  useEffect(() => {
-    loadSelector();
-  }, []);
+  // useEffect(() => {
+  //   loadSelector();
+  // }, []);
 
   useEffect(() => {
     setCardsFiltered(cards);
+    loadSelector(cards);
   }, [cards]);
 
   return (
@@ -43,6 +46,7 @@ export default function MagicCards() {
           <option value="">
             Search by type
           </option>
+          {cardType.length}
           {
             cardType && cardType.map((item) => (
               <option
