@@ -21,9 +21,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Router>
-          <Route element={<CardDetail />} path="/detail/:id">
-            fd
-          </Route>
+          <Route path="/detail/:id" element={<CardDetail />} />
           <Route path="/" element={<MagicCards />} />
         </Router>
       </BrowserRouter>
