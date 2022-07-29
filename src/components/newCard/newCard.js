@@ -4,7 +4,7 @@ import './newCard.css';
 
 const NewMagicCard = (props) => {
   const {
-    id, name, image, convertedManaCost,
+    id, name, image, convertedManaCost, types,
   } = props;
 
   const link = 'detail';
@@ -13,6 +13,10 @@ const NewMagicCard = (props) => {
     <article className="card">
       <section id={id} className="cards-section">
         <h2>{name}</h2>
+        <h2>
+          Type:
+          {types}
+        </h2>
         <Link to={`/${link}/${id}`}>
           <img className="images" alt="this is a Magic Gathering Card" src={image} />
         </Link>
@@ -28,6 +32,7 @@ const NewMagicCard = (props) => {
 NewMagicCard.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  types: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   convertedManaCost: PropTypes.number.isRequired,
 };
