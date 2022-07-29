@@ -3,10 +3,25 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Magic';
+	src: local('magic'), url('./fonts/magic/magic.TTF') format('truetype');
+	font-weight: bold;
+}
+
+.font-face-magic {
+	font-family: 'Magic';
+}
+
 .App {
 	text-align: center;
 }
 
+h1 {
+	margin: 50px 0 0 0;
+}
+
 body {
+	font-family: 'Magic';
 	background-color: rgb(48, 92, 172);
 }

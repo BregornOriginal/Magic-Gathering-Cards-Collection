@@ -6,6 +6,7 @@ import CardDetail from './components/pages/details/cardDetail';
 import MagicCards from './components/pages/home/homePage';
 import getCards from './components/data-api/magicCards-api';
 
+import './fonts/magic/magic.TTF';
 import './App.css';
 
 function App() {
