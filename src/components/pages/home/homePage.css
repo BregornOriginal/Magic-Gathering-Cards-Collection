@@ -22,7 +22,7 @@ select {
   width: 200px;
   text-align: center;
   font-size: 20px;
-  font-family: 'Magic';
+  font-family: 'Magic', sans-serif;
   background-color: rgb(173, 181, 196);
   border: none;
   border-radius: 5px;

@@ -10,7 +10,7 @@
 }
 
 .font-face-magic {
-  font-family: 'Magic';
+  font-family: 'Magic', sans-serif;
 }
 
 .App {
@@ -22,6 +22,6 @@ h1 {
 }
 
 body {
-  font-family: 'Magic';
+  font-family: 'Magic', sans-serif;
   background-color: rgb(48, 92, 172);
 }
