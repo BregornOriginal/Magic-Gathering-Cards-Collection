@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 
-import NewMagicCard from './NewCard';
+import NewMagicCard from './newCard';
 
 const cardProps = {
   id: '57aaebc1-850c-503d-9f6e-bb8d00d8bf7c',
