@@ -47,8 +47,20 @@ header {
   margin-right: 5px;
 }
 
+@media only screen and (min-width: 768px) {
+  .nav-bar a {
+    font-size: 25px;
+  }
+
+  .logo-image {
+    width: 250px;
+    border-radius: 20px;
+  }
+}
+
 .links-container {
   display: flex;
+  align-items: center;
 }
 
 .fa-solid {
