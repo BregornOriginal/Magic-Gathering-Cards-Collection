@@ -4,13 +4,13 @@
 
 ***This is a capstone project for Microverse of React/Redux Module.***
 
-***In this project, the requeriments was to follow an disign as example to show on the home page a list of elements that was getted from an API.***
+***In this project, the requirement were to follow a disign as example to show on the home page a list of elements that was getted from an API.***
 
-***Each elemente should have a property to by filtered, so we have to create a filter to filter this properties.***
+***Each element should have a property to be filtered, so we have to create a filter to filter this property.***
 
 ***In this page you can see how I create a filter to create the cards depending on the type of them.***
 
-***I only bring from the API 100 cards because there was like 1000 cards or more, so I'm only showing a part of all the cards that the game have.***
+***I only bring from the API 100 cards because there were like 1000 cards or more, so I'm only showing a part of all the cards that the game has.***
 
 ***I'm proud to create this project by working with the redux and storing the data from the API inside of it, so I could use it to work on the different pages of the website.***
  
@@ -98,7 +98,9 @@ In this case I will create the Home page and the Details page of each card for m
 - Twitter: [@Bregorn](https://twitter.com/home)
 - LinkedIn: [@LinkedIn](https://www.linkedin.com/in/julio-gagliardi/)
 
-> I want to say thank you to Nelson Sakwa in Behance for share her design
+## Acknowledgements 	:sunflower:
+
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) I want to say thank you to for share the design!
 
 ## 🤝 Contributing
 
