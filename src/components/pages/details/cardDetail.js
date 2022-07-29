@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import './cardDetail.css';
 
 export default function CardDetail() {
   const { id } = useParams();
@@ -17,28 +18,28 @@ export default function CardDetail() {
 
   return (
     <section className="detail-of-card">
-      <div>
-        <img alt="This should be a Magic Card" src={cards[page].image} />
-        <h1>
+      <div className="detail-container">
+        <h4>
           Name:
           {cards[page].name}
-        </h1>
-        <h1>
+        </h4>
+        <h4>
           Rarity:
           {cards[page].rarity}
-        </h1>
-        <h1>
+        </h4>
+        <img className="images" alt="This should be a Magic Card" src={cards[page].image} />
+        <h4>
           Set Name:
           {cards[page].setName}
-        </h1>
-        <h1>
+        </h4>
+        <h4>
           Rarity:
           {cards[page].artist}
-        </h1>
-        <h1>
+        </h4>
+        <p className="description">
           Description:
           {cards[page].originalText}
-        </h1>
+        </p>
       </div>
     </section>
   );
