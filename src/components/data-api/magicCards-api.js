@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const createCardsList = (obj) => {
   const result = [];
 
-  obj.cards.slice(0, 50).forEach((item) => {
+  obj.cards.forEach((item) => {
     if (item.imageUrl) {
       result.push({
         convertedManaCost: item.cmc,
