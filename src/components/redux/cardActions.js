@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import getCards from '../../data-api/magicCards-api';
+import getCards from '../data-api/magicCards-api';
 
 const initialState = {
   cards: [],
