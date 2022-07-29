@@ -1,6 +1,6 @@
 import { useState, useEffect, React } from 'react';
 import { useSelector } from 'react-redux';
-import NewMagicCard from '../../newCard/NewCard';
+import NewMagicCard from '../../newCard/newCard';
 import './homePage.css';
 
 export default function MagicCards() {
