@@ -1,27 +1,27 @@
 * {
-	margin: 0;
-	box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-	font-family: 'Magic';
-	src: local('magic'), url('./fonts/magic/magic.TTF') format('truetype');
-	font-weight: bold;
+  font-family: 'Magic';
+  src: local('magic'), url('./fonts/magic/magic.TTF') format('truetype');
+  font-weight: bold;
 }
 
 .font-face-magic {
-	font-family: 'Magic', sans-serif;
+  font-family: 'Magic', sans-serif;
 }
 
 .App {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	margin: 50px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 body {
-	font-family: 'Magic', sans-serif;
-	background-color: rgb(48, 92, 172);
+  font-family: 'Magic', sans-serif;
+  background-color: rgb(48, 92, 172);
 }
