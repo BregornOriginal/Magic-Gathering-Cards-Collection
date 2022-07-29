@@ -1,6 +1,7 @@
 import { useState, useEffect, React } from 'react';
 import { useSelector } from 'react-redux';
 import NewMagicCard from '../../newCard/NewCard';
+import './homePage.css';
 
 export default function MagicCards() {
   const { cards } = useSelector((state) => state.cards);
@@ -33,10 +34,10 @@ export default function MagicCards() {
   }, [cards]);
 
   return (
-    <section className="list-of-cards">
+    <>
       <div className="filter-container">
         <h3>Filter by</h3>
-        <select onChange={handlerEvent}>
+        <select className="select" onChange={handlerEvent}>
           <option value="">
             Search by type
           </option>
@@ -53,18 +54,20 @@ export default function MagicCards() {
           }
         </select>
       </div>
-      {
-        cardsFiltered ? cardsFiltered.map((magicCard) => (
-          <NewMagicCard
-            key={magicCard.id}
-            id={magicCard.id}
-            name={magicCard.name}
-            image={magicCard.image}
-            types={magicCard.types}
-            convertedManaCost={magicCard.convertedManaCost}
-          />
-        )) : <p>Cards not found</p>
-      }
-    </section>
+      <section className="list-of-cards">
+        {
+          cardsFiltered ? cardsFiltered.map((magicCard) => (
+            <NewMagicCard
+              key={magicCard.id}
+              id={magicCard.id}
+              name={magicCard.name}
+              image={magicCard.image}
+              types={magicCard.types}
+              convertedManaCost={magicCard.convertedManaCost}
+            />
+          )) : <p>Cards not found</p>
+        }
+      </section>
+    </>
   );
 }

@@ -1,0 +1,27 @@
+.images {
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+.images:hover {
+	-webkit-transform: scale(1.2) rotate(0.01deg);
+	transform: scale(1.2) rotate(0.01deg);
+}
+
+.card-description {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.parameter-container {
+	display: flex;
+  font-family: 'Courier New', Courier, monospace;
+	font-size: 50px;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.fa-solid {
+	font-size: 30px;
+}
