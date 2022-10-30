@@ -66,7 +66,7 @@ In this case I will create the Home page and the Details page of each card for m
 
 ## Live Demo
 
-[Avaible soon](https://bregorn-magic-the-gathering.netlify.app/)
+[Demo on Netlify](https://bregorn-magic-the-gathering.netlify.app/)
 
 ## Getting Started
 
